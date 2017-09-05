@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <!--移动端的窗口，-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css" />
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+      <br /><br />
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4">
+              <!--声明下拉菜单-->
+              <div class="dropdown my-btn">
+                  <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">最新的电影<span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                      <li class="dropdown-header">科幻类</li>
+                      <li><a href="">黑夜传说</a></li>
+                      <li class="active"><a href="">生化危机</a></li>
+                      <li><a href="">西游讲</a></li>
+                      <!--分柯线-->
+                      <li class="divider"></li>
+                      <li class="dropdown-header">搞笑类</li>
+                      <li><a href="">绝世高手</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+      <script src="jquery-1.11.1.js"></script>
+      <script src="dist/js/bootstrap.js"></script>
+     <script>
+         alert(window.navigator.userAgent);
+         //如何区分移动端和pc端
+         if(window.navigator.userAgent.toLowerCase().indexOf("mobile")==-1){
+             var timer=null;
+             $(".dropdown-toggle").hover(function(){
+                 clearTimeout(timer);
+                 $(".dropdown").removeClass("open");
+             },function(){
+                 timer=setTimeout(function () {
+                     $(".dropdown").removeClass("open");
+                 },100);
+             });
+
+             $(".dropdown-menu").hover(function(){
+                 clearTimeout(timer);
+             })
+         }
+     </script>
+</body>
+</html>

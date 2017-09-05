@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <!--移动端的窗口，-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css" />
+    <title>Title</title>
+    <style>
+       .tab-content{
+           width:400px;
+           border:1px solid #ddd;
+           border-top:none;
+           padding:50px;
+       }
+    </style>
+</head>
+<body>
+  <div class="container">
+      <br /><br />
+      <ul class="nav nav-tabs">
+          <li class="active"><a href="">one</a></li>
+          <li><a href="">Two</a></li>
+          <li><a href="">Three</a></li>
+      </ul>
+
+      <br /><br />
+      <ul class="nav nav-tabs" style="width:400px;">
+          <li class="active"><a href="">one</a></li>
+          <li><a href="">Two</a></li>
+          <li><a href="">Three</a></li>
+      </ul>
+
+      <br /><br />   <!--两端对齐-->
+      <ul class="nav nav-tabs nav-justified" >
+          <li class="active"><a href="">one</a></li>
+          <li><a href="">Two</a></li>
+          <li><a href="">Three</a></li>
+      </ul>
+
+      <br /><br />        <!--线条自适应-->
+      <ul class="nav nav-tabs nav-tabs-justified" >
+          <li class="active"><a href="">one</a></li>
+          <li><a href="">Two</a></li>
+          <li><a href="">Three</a></li>
+      </ul>
+
+      <br /><br />        <!--药丸型-->
+      <ul class="nav nav-pills">
+          <li class="active"><a href="">one</a></li>
+          <li><a href="">Two</a></li>
+          <li><a href="">Three</a></li>
+      </ul>
+
+      <br /><br />        <!--树状药丸型-->
+      <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="">one</a></li>
+          <li><a href="">Two</a></li>
+          <li><a href="">Three</a></li>
+      </ul>
+
+      <ul class="nav nav-tabs" style="width:400px;">
+          <li class="active"><a href="#a" data-toggle="tab">one</a></li>
+              <!--与下面的id对应，代表你这个选项卡切换的是下面这个id的内容-->
+          <li><a href="#b" data-toggle="tab">one</a></li>
+          <li><a href="#c" data-toggle="tab">one</a></li>
+      </ul>
+      <!--要切换的内容-->
+      <ul class="tab-content">
+          <li id="a" class="tab-pane fade in active">This is my style</li>
+          <li id="b" class="tab-pane fade in">This is my world</li>
+          <li id="c" class="tab-pane fade in">my world my all</li>
+      </ul>
+
+
+
+
+
+
+
+
+
+
+  </div>
+      <script src="jquery-1.11.1.js"></script>
+      <script src="dist/js/bootstrap.js"></script>
+     <script>
+
+     </script>
+</body>
+</html>
